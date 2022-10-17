@@ -5,8 +5,10 @@
   "packageManager": "yarn@3.2.3",
   "scripts": {
     "postinstall": "husky install",
-    "lint": "eslint --fix 'apps/**/src/**.ts'",
-    "prettier": "prettier --write 'apps/**/src/**'"
+    "lint": "eslint --fix 'apps/**/src/**.ts' 'packages/**/src/**.ts'",
+    "prettier": "prettier --write 'apps/**/src/**' 'packages/**/src/**'",
+    "changelog": "lerna version --conventional-commits",
+    "publish": "lerna publish"
   },
   "workspaces": {
     "packages": [
