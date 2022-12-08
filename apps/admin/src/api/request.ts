@@ -1,8 +1,10 @@
-import axios, { AxiosError } from 'axios';
+import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { authStore } from '../store/auth.store';
 import set from 'lodash/set';
 import appConfig from '../config';
 import { snackbar } from '@kagari/ui/utils/ProSnackbar';
+import router from '../config/router';
+import config from '../config';
 
 const $http = axios.create({ baseURL: appConfig.baseURL });
 export const $request = axios.create({
@@ -35,8 +37,18 @@ $http.interceptors.response.use(
     snackbar.error(error.message, {
       autoHideDuration: 5000,
     });
+    if (error.response.status === 401) {
+      return router.navigate(config.loginUrl);
+    }
+
+    if (error.response.status === 403) {
+      return snackbar.error('Permission Denied');
+    }
+
     throw error;
   },
 );
 
-export default $http;
+export default <T>(config: AxiosRequestConfig) => {
+  return $http(config) as Promise<AxiosResponse<T>>;
+};

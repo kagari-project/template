@@ -1,5 +1,4 @@
 import { Module, RequestMethod } from '@nestjs/common';
-import { AuthController } from './auth.controller';
 import {
   DatabaseModule,
   DataSource,
@@ -25,6 +24,9 @@ import {
 import { CoreModule } from './core/core.module';
 import { RoleBasedAccessControlModule } from '@kagari/rbac';
 import { SessionEntity } from './core/entities/Session.entity';
+import { AuthModule } from './services/auth/auth.module';
+import { MediaModule } from './services/media/media.module';
+import { MediaEntity } from './services/media/Media.entity';
 
 @Module({
   imports: [
@@ -38,7 +40,13 @@ import { SessionEntity } from './core/entities/Session.entity';
       inject: [ConfigService],
       useFactory: (cs: ConfigService) => ({
         type: cs.get('DATABASE.TYPE'),
-        entities: [UserEntity, RoleEntity, PermissionEntity, SessionEntity],
+        entities: [
+          UserEntity,
+          RoleEntity,
+          PermissionEntity,
+          SessionEntity,
+          MediaEntity,
+        ],
         migrations: [],
         logging: cs.get<string | boolean>('DATABASE.LOGGING'),
         logger: new NestLogger({ context: 'database' }),
@@ -94,7 +102,8 @@ import { SessionEntity } from './core/entities/Session.entity';
       }),
     }),
     ApiModule,
+    AuthModule,
+    MediaModule,
   ],
-  controllers: [AuthController],
 })
 export class AppModule {}
