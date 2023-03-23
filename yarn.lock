@@ -3516,9 +3516,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kagari/auth@npm:^0.4.8":
-  version: 0.4.8
-  resolution: "@kagari/auth@npm:0.4.8::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40kagari%2Fauth%2F-%2Fauth-0.4.8.tgz"
+"@kagari/auth@npm:^0.4.9":
+  version: 0.4.9
+  resolution: "@kagari/auth@npm:0.4.9"
   dependencies:
     "@nestjs/common": ^9.0.0
     "@nestjs/core": ^9.0.0
@@ -3530,13 +3530,13 @@ __metadata:
     passport-local: ^1.0.0
     reflect-metadata: ^0.1.13
     rxjs: ~7.5.0
-  checksum: 407e5d0eb11053aaf1e3a20b992573b41238a150b609a0cd7ca1d1d3f80e1ad13d1bb1e10eccf83ab6022729ceb8875254db1eb65d829bb448e3a7f79c342327
+  checksum: fe715df4ba452f41d1c5c4166799eaaaedf4a538af6c02bb98d6fb2298f8d55dc180392227d7dee83d794eacfa3c5bc778ca1d1ccdd1ae6a2672f37d0e15d41b
   languageName: node
   linkType: hard
 
-"@kagari/database@npm:^0.4.8":
-  version: 0.4.8
-  resolution: "@kagari/database@npm:0.4.8::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40kagari%2Fdatabase%2F-%2Fdatabase-0.4.8.tgz"
+"@kagari/database@npm:^0.4.9":
+  version: 0.4.9
+  resolution: "@kagari/database@npm:0.4.9"
   dependencies:
     "@nestjs/common": ^9.0.0
     "@nestjs/core": ^9.0.0
@@ -3544,32 +3544,48 @@ __metadata:
     reflect-metadata: ^0.1.13
     rxjs: ~7.5.0
     typeorm: ^0.3.9
-  checksum: 0a94528bf3a0b602a743e98836eb316d590f2944a2b70f2304ddb3a10840ea7a9360ea834142be5d53e95d60922ec0b10ebe54ab199afb29c8dca14dfc8e1683
+  checksum: d6270d51b75da7ae0db77bdd67fd849fd302afc50e1e28591c4edd2bb4a302d72b4e824c8893c9cdd967773c39a1b28a8752dae8c2d2a5e5d976adf4fb7b1a95
   languageName: node
   linkType: hard
 
-"@kagari/rbac@npm:^0.4.8":
-  version: 0.4.8
-  resolution: "@kagari/rbac@npm:0.4.8::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40kagari%2Frbac%2F-%2Frbac-0.4.8.tgz"
+"@kagari/multi-themes@npm:^0.4.9":
+  version: 0.4.9
+  resolution: "@kagari/multi-themes@npm:0.4.9"
+  dependencies:
+    express-hbs: ^2.4.0
+    serve-static: ^1.15.0
+  peerDependencies:
+    "@nestjs/common": ^9.0.0
+    "@nestjs/core": ^9.0.0
+    "@nestjs/typeorm": ^9.0.1
+    rxjs: ^7.5.0
+    typeorm: 0.2.45
+  checksum: 92c2733deeafb1911e88e8f9443552e627c554ab3af79e841406cd6ff2bfa45f47ce0f3c93358d36ce4a3f4e6dfe4fac7e85d4321cb7219054f39dc775299693
+  languageName: node
+  linkType: hard
+
+"@kagari/rbac@npm:^0.4.9":
+  version: 0.4.9
+  resolution: "@kagari/rbac@npm:0.4.9"
   dependencies:
     "@nestjs/common": ^9.0.0
     "@nestjs/core": ^9.0.0
     reflect-metadata: ^0.1.13
     rxjs: ~7.5.0
-  checksum: 0e057f7fadb18b37cd88c03bd0f0d2b21b3a40a8e455ca763ef2057b945a1340d7c121221ddf89ac51e17eea015fbb5e6e253c00ff49078f0dbfdabf4389e9db
+  checksum: 2df0a3728a07009db5ec7f0c4d4edcc51a97cdff03684e7219c6daf5a05ff14bf512eda9c1bcc59625b5704802d29e053044457cb164a66bd6f773ccba756d22
   languageName: node
   linkType: hard
 
-"@kagari/restful@npm:^0.4.8":
-  version: 0.4.8
-  resolution: "@kagari/restful@npm:0.4.8::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40kagari%2Frestful%2F-%2Frestful-0.4.8.tgz"
+"@kagari/restful@npm:^0.4.9":
+  version: 0.4.9
+  resolution: "@kagari/restful@npm:0.4.9"
   dependencies:
     "@nestjs/common": ^9.0.0
     "@nestjs/core": ^9.0.0
     joi: ^17.6.0
     reflect-metadata: ^0.1.13
     rxjs: ~7.5.0
-  checksum: 611d22c87e9dbb0fb45b47fdeff8e804eaa249768468627179ed8fd3c35209033d8eb6e9617e5f8cf8b502141022a3bf8381168b63d4907724b4d87a66dacf4a
+  checksum: 6b2702f04e99b716781e36135947b6b9fcc654b60f847bb622822663ae2fdba962318adff5772b554e68f591c5363a675b0748e817b817523697eb272faf1229
   languageName: node
   linkType: hard
 
@@ -5778,7 +5794,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abbrev@npm:1":
+"abbrev@npm:1, abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
   checksum: a4a97ec07d7ea112c517036882b2ac22f3109b7b19077dc656316d07d308438aac28e4d9746dc4d84bf6b1e75b4a7b0a5f3cb30592419f128ca9a8cee3bcfa17
@@ -6735,6 +6751,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bluebird@npm:^3.5.3":
+  version: 3.7.2
+  resolution: "bluebird@npm:3.7.2"
+  checksum: 869417503c722e7dc54ca46715f70e15f4d9c602a423a02c825570862d12935be59ed9c7ba34a9b31f186c017c23cac6b54e35446f8353059c101da73eac22ef
+  languageName: node
+  linkType: hard
+
 "bluebird@npm:^3.5.5":
   version: 3.7.2
   resolution: "bluebird@npm:3.7.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fbluebird%2F-%2Fbluebird-3.7.2.tgz"
@@ -7459,7 +7482,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^2.20.0":
+"commander@npm:^2.19.0, commander@npm:^2.20.0":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
   checksum: ab8c07884e42c3a8dbc5dd9592c606176c7eb5c1ca5ff274bcf907039b2c41de3626f684ea75ccf4d361ba004bbaff1f577d5384c155f3871e456bdf27becf9e
@@ -7558,6 +7581,16 @@ __metadata:
     readable-stream: ^2.2.2
     typedarray: ^0.0.6
   checksum: 1ef77032cb4459dcd5187bd710d6fc962b067b64ec6a505810de3d2b8cc0605638551b42f8ec91edf6fcd26141b32ef19ad749239b58fae3aba99187adc32285
+  languageName: node
+  linkType: hard
+
+"config-chain@npm:^1.1.13":
+  version: 1.1.13
+  resolution: "config-chain@npm:1.1.13"
+  dependencies:
+    ini: ^1.3.4
+    proto-list: ~1.2.1
+  checksum: 828137a28e7c2fc4b7fb229bd0cd6c1397bcf83434de54347e608154008f411749041ee392cbe42fab6307e02de4c12480260bf769b7d44b778fdea3839eafab
   languageName: node
   linkType: hard
 
@@ -8681,6 +8714,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"editorconfig@npm:^0.15.3":
+  version: 0.15.3
+  resolution: "editorconfig@npm:0.15.3"
+  dependencies:
+    commander: ^2.19.0
+    lru-cache: ^4.1.5
+    semver: ^5.6.0
+    sigmund: ^1.0.1
+  bin:
+    editorconfig: bin/editorconfig
+  checksum: a94afeda19f12a4bcc4a573f0858df13dd3a2d1a3268cc0f17a6326ebe7ddd6cb0c026f8e4e73c17d34f3892bf6f8b561512d9841e70063f61da71b4c57dc5f0
+  languageName: node
+  linkType: hard
+
 "ee-first@npm:1.1.1":
   version: 1.1.1
   resolution: "ee-first@npm:1.1.1"
@@ -9569,6 +9616,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"express-hbs@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "express-hbs@npm:2.4.0"
+  dependencies:
+    bluebird: ^3.5.3
+    handlebars: ^4.7.7
+    js-beautify: ^1.13.11
+    lodash: ^4.17.21
+    readdirp: ^3.6.0
+  dependenciesMeta:
+    js-beautify:
+      optional: true
+  checksum: 16381879b1346cdab80006761fc3aea128eb40c0f3a27371b65d2b0755a30ce96e32bf3927ac824ee3d871b57d37d81d1737669e9cf2b9f5db874ee945c20c18
+  languageName: node
+  linkType: hard
+
 "express-session@npm:^1.17.3":
   version: 1.17.3
   resolution: "express-session@npm:1.17.3"
@@ -10291,6 +10354,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:^8.0.3":
+  version: 8.1.0
+  resolution: "glob@npm:8.1.0"
+  dependencies:
+    fs.realpath: ^1.0.0
+    inflight: ^1.0.4
+    inherits: 2
+    minimatch: ^5.0.1
+    once: ^1.3.0
+  checksum: 92fbea3221a7d12075f26f0227abac435de868dd0736a17170663783296d0dd8d3d532a5672b4488a439bf5d7fb85cdd07c11185d6cd39184f0385cbdfb86a47
+  languageName: node
+  linkType: hard
+
 "global-dirs@npm:^0.1.1":
   version: 0.1.1
   resolution: "global-dirs@npm:0.1.1"
@@ -10409,6 +10485,24 @@ __metadata:
   version: 2.0.1
   resolution: "handle-thing@npm:2.0.1"
   checksum: 68071f313062315cd9dce55710e9496873945f1dd425107007058fc1629f93002a7649fcc3e464281ce02c7e809a35f5925504ab8105d972cf649f1f47cb7d6c
+  languageName: node
+  linkType: hard
+
+"handlebars@npm:^4.7.7":
+  version: 4.7.7
+  resolution: "handlebars@npm:4.7.7"
+  dependencies:
+    minimist: ^1.2.5
+    neo-async: ^2.6.0
+    source-map: ^0.6.1
+    uglify-js: ^3.1.4
+    wordwrap: ^1.0.0
+  dependenciesMeta:
+    uglify-js:
+      optional: true
+  bin:
+    handlebars: bin/handlebars
+  checksum: 1e79a43f5e18d15742977cb987923eab3e2a8f44f2d9d340982bcb69e1735ed049226e534d7c1074eaddaf37e4fb4f471a8adb71cddd5bc8cf3f894241df5cee
   languageName: node
   linkType: hard
 
@@ -13001,6 +13095,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-beautify@npm:^1.13.11":
+  version: 1.14.7
+  resolution: "js-beautify@npm:1.14.7"
+  dependencies:
+    config-chain: ^1.1.13
+    editorconfig: ^0.15.3
+    glob: ^8.0.3
+    nopt: ^6.0.0
+  bin:
+    css-beautify: js/bin/css-beautify.js
+    html-beautify: js/bin/html-beautify.js
+    js-beautify: js/bin/js-beautify.js
+  checksum: 1950d0d3f05f8ad06b73eb77b9aac602d00b24eab7d8a6d8ea0b1841ab9c730acecd5a6f3926e360dce7a2583481bc77caf6d024490a58fa9897cbbbdfc35984
+  languageName: node
+  linkType: hard
+
 "js-sdsl@npm:^4.1.4":
   version: 4.2.0
   resolution: "js-sdsl@npm:4.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fjs-sdsl%2F-%2Fjs-sdsl-4.2.0.tgz"
@@ -13580,6 +13690,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "lru-cache@npm:4.1.5"
+  dependencies:
+    pseudomap: ^1.0.2
+    yallist: ^2.1.2
+  checksum: 4bb4b58a36cd7dc4dcec74cbe6a8f766a38b7426f1ff59d4cf7d82a2aa9b9565cd1cb98f6ff60ce5cd174524868d7bc9b7b1c294371851356066ca9ac4cf135a
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^6.0.0":
   version: 6.0.0
   resolution: "lru-cache@npm:6.0.0"
@@ -13951,6 +14071,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimist@npm:^1.2.5":
+  version: 1.2.8
+  resolution: "minimist@npm:1.2.8"
+  checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
+  languageName: node
+  linkType: hard
+
 "minimist@npm:^1.2.6":
   version: 1.2.6
   resolution: "minimist@npm:1.2.6"
@@ -14186,7 +14313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"neo-async@npm:^2.6.2":
+"neo-async@npm:^2.6.0, neo-async@npm:^2.6.2":
   version: 2.6.2
   resolution: "neo-async@npm:2.6.2"
   checksum: deac9f8d00eda7b2e5cd1b2549e26e10a0faa70adaa6fdadca701cc55f49ee9018e427f424bac0c790b7c7e2d3068db97f3093f1093975f2acb8f8818b936ed9
@@ -14311,6 +14438,17 @@ __metadata:
   bin:
     nopt: bin/nopt.js
   checksum: d35fdec187269503843924e0114c0c6533fb54bbf1620d0f28b4b60ba01712d6687f62565c55cc20a504eff0fbe5c63e22340c3fad549ad40469ffb611b04f2f
+  languageName: node
+  linkType: hard
+
+"nopt@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "nopt@npm:6.0.0"
+  dependencies:
+    abbrev: ^1.0.0
+  bin:
+    nopt: bin/nopt.js
+  checksum: 82149371f8be0c4b9ec2f863cc6509a7fd0fa729929c009f3a58e4eb0c9e4cae9920e8f1f8eb46e7d032fec8fb01bede7f0f41a67eb3553b7b8e14fa53de1dac
   languageName: node
   linkType: hard
 
@@ -16165,6 +16303,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proto-list@npm:~1.2.1":
+  version: 1.2.4
+  resolution: "proto-list@npm:1.2.4"
+  checksum: 4d4826e1713cbfa0f15124ab0ae494c91b597a3c458670c9714c36e8baddf5a6aad22842776f2f5b137f259c8533e741771445eb8df82e861eea37a6eaba03f7
+  languageName: node
+  linkType: hard
+
 "proxy-addr@npm:~2.0.7":
   version: 2.0.7
   resolution: "proxy-addr@npm:2.0.7"
@@ -16179,6 +16324,13 @@ __metadata:
   version: 1.1.0
   resolution: "proxy-from-env@npm:1.1.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fproxy-from-env%2F-%2Fproxy-from-env-1.1.0.tgz"
   checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
+  languageName: node
+  linkType: hard
+
+"pseudomap@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "pseudomap@npm:1.0.2"
+  checksum: 856c0aae0ff2ad60881168334448e898ad7a0e45fe7386d114b150084254c01e200c957cf378378025df4e052c7890c5bd933939b0e0d2ecfcc1dc2f0b2991f5
   languageName: node
   linkType: hard
 
@@ -16644,7 +16796,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readdirp@npm:~3.6.0":
+"readdirp@npm:^3.6.0, readdirp@npm:~3.6.0":
   version: 3.6.0
   resolution: "readdirp@npm:3.6.0"
   dependencies:
@@ -17361,7 +17513,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serve-static@npm:1.15.0":
+"serve-static@npm:1.15.0, serve-static@npm:^1.15.0":
   version: 1.15.0
   resolution: "serve-static@npm:1.15.0"
   dependencies:
@@ -17377,10 +17529,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "server@workspace:apps/server"
   dependencies:
-    "@kagari/auth": ^0.4.8
-    "@kagari/database": ^0.4.8
-    "@kagari/rbac": ^0.4.8
-    "@kagari/restful": ^0.4.8
+    "@kagari/auth": ^0.4.9
+    "@kagari/database": ^0.4.9
+    "@kagari/multi-themes": ^0.4.9
+    "@kagari/rbac": ^0.4.9
+    "@kagari/restful": ^0.4.9
     "@nestjs/cli": ^9.0.0
     "@nestjs/common": ^9.0.0
     "@nestjs/config": ^2.2.0
@@ -17492,6 +17645,13 @@ __metadata:
     get-intrinsic: ^1.0.2
     object-inspect: ^1.9.0
   checksum: 351e41b947079c10bd0858364f32bb3a7379514c399edb64ab3dce683933483fc63fb5e4efe0a15a2e8a7e3c436b6a91736ddb8d8c6591b0460a24bb4a1ee245
+  languageName: node
+  linkType: hard
+
+"sigmund@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "sigmund@npm:1.0.1"
+  checksum: 793f81f8083ad75ff3903ffd93cf35be8d797e872822cf880aea27ce6db522b508d93ea52ae292bccf357ce34dd5c7faa544cc51c2216e70bbf5fcf09b62707c
   languageName: node
   linkType: hard
 
@@ -18948,6 +19108,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uglify-js@npm:^3.1.4":
+  version: 3.17.4
+  resolution: "uglify-js@npm:3.17.4"
+  bin:
+    uglifyjs: bin/uglifyjs
+  checksum: 7b3897df38b6fc7d7d9f4dcd658599d81aa2b1fb0d074829dd4e5290f7318dbca1f4af2f45acb833b95b1fe0ed4698662ab61b87e94328eb4c0a0d3435baf924
+  languageName: node
+  linkType: hard
+
 "uid-safe@npm:~2.1.5":
   version: 2.1.5
   resolution: "uid-safe@npm:2.1.5"
@@ -19694,6 +19863,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"wordwrap@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "wordwrap@npm:1.0.0"
+  checksum: 2a44b2788165d0a3de71fd517d4880a8e20ea3a82c080ce46e294f0b68b69a2e49cff5f99c600e275c698a90d12c5ea32aff06c311f0db2eb3f1201f3e7b2a04
+  languageName: node
+  linkType: hard
+
 "workbox-background-sync@npm:6.5.4":
   version: 6.5.4
   resolution: "workbox-background-sync@npm:6.5.4::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fworkbox-background-sync%2F-%2Fworkbox-background-sync-6.5.4.tgz"
@@ -20028,6 +20204,13 @@ __metadata:
   version: 5.0.8
   resolution: "y18n@npm:5.0.8"
   checksum: 54f0fb95621ee60898a38c572c515659e51cc9d9f787fb109cef6fde4befbe1c4602dc999d30110feee37456ad0f1660fa2edcfde6a9a740f86a290999550d30
+  languageName: node
+  linkType: hard
+
+"yallist@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "yallist@npm:2.1.2"
+  checksum: 9ba99409209f485b6fcb970330908a6d41fa1c933f75e08250316cce19383179a6b70a7e0721b89672ebb6199cc377bf3e432f55100da6a7d6e11902b0a642cb
   languageName: node
   linkType: hard
 
